@@ -3,31 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shihua Yin's Personal Website</title>
+    <title>Your Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to Shihua Yin's Website !!!</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+        </ul>
       </nav>
+      <div class="profile-container">
+        <div class="profile-photo">
+          <img src="assets/shihua.jpg" alt="Profile Picture" />
+        </div>
+        <div class="profile-info">
+          <h1>Shihua Yin</h1>
+          <p class="description">
+            A passionate leaner, driven by the potential of technology to create
+            innovative solutions that enhance everyday life.
+          </p>
+          <div class="contact-info">
+            <p>GITHUB: <a href="#">https://shihuayin.github.io/</a></p>
+            <p>
+              EMAIL:
+              <a href="mailto:youremail@example.com">shihuaok@gmail.com</a>
+            </p>
+            <p>EDUCATION: Goldsmiths, University of London</p>
+            <p>LOCATION: London, UK</p>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <section>
-      <h2>Introduction</h2>
+    <!-- About Me Section -->
+    <section class="about-me">
+      <h2>About Me</h2>
       <p>
-        This is a simple personal website built using HTML, CSS, and JavaScript.
+        I am currently in the final year of my Computer Science degree. I am
+        very interested in web development, and I am particularly fascinated by
+        using React to build dynamic user interfaces. At the same time, I am
+        passionate about efficiently managing and integrating databases, aiming
+        to seamlessly connect the front end with the back end to deliver better
+        user experiences and data processing capabilities.
       </p>
-      <button id="greetButton">Click me!</button>
-      <p id="greetMessage"></p>
+      <a href="your-cv.pdf" class="btn">Download CV</a>
     </section>
 
-    <footer>
-      <p>© 2024 Shihua Yin. All rights reserved.</p>
-    </footer>
+    <!-- Personal Projects Section -->
+    <section class="projects">
+      <h2>Personal Projects</h2>
+      <div class="project-filter">
+        <button>All</button>
+        <button>Software Projects</button>
+        <button>Dynamic Web Projects</button>
+      </div>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="assets/project1.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>Visualdev UI</h3>
+            <p>
+              VisualDev UI aims to create an innovative and user-friendly UI
+              library platform that revolutionizes the web development
+              experience by making it more visual and intuitive. Unlike
+              traditional UI libraries, our software focuses on providing a
+              visual development experience similar to building with Lego
+              blocks, where users can individually select, copy, and assemble UI
+              components to create fully functional web pages.
+            </p>
+            <p>Keywords: JavaScript, Node.js, etc.</p>
+            <a href="project-link-1">GitHub: Project 1</a>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="assets/project2.avif" alt="Project 2" />
+          <div class="project-info">
+            <h3>OtoDecks</h3>
+            <p>
+              OtoDecks is an audio player for DJs and audio enthusiasts,
+              offering customizable playback with a dual-player system for
+              independent or synced control. It includes essential features like
+              volume control, playback speed adjustment, and track position
+              selection. I also implemented a waveform display for visual
+              monitoring of audio progress, along with custom buttons and design
+              elements to enhance the user experience.
+            </p>
+            <p>Keywords: C++, DJ, etc.</p>
+            <a href="project-link-2">GitHub: Project 2</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="assets/project3.webp" alt="Project 3" />
+          <div class="project-info">
+            <h3>MerkelMain</h3>
+            <p>
+              MerkelMain exchange focuses on cryptocurrency data visualization,
+              primarily implementing the generation and plotting of candlestick
+              charts using historical price data. The candlestick charts display
+              key information such as the market's open, close, high, and low
+              prices, helping users visually analyze the price fluctuations and
+              market trends of cryptocurrencies.
+            </p>
+            <p>Keywords: Python, Django, etc.</p>
+            <a href="project-link-3">GitHub: Project 3</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <img src="assets/project4.webp" alt="Project 4" />
+          <div class="project-info">
+            <h3>CueMaster</h3>
+            <p>
+              CueMaster is a billiards simulation game I developed using the
+              Matter.js physics engine, aimed at providing users with a
+              realistic billiards experience. Through keyboard and mouse
+              controls, users can simulate striking the ball and experience
+              realistic movement and collisions on the table. The game offers
+              multiple modes, including a standard billiards mode and challenge
+              mode.
+            </p>
+            <p>Keywords: React, MySQL, etc.</p>
+            <a href="project-link-4">GitHub: Project 4</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Connect with me on LinkedIn or other social media platforms.</p>
+    </footer>
   </body>
 </html>
