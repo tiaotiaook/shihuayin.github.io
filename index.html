@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHIHUA YIN</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -29,7 +33,7 @@
             <p>GITHUB: <a href="#">https://shihuayin.github.io/</a></p>
             <p>
               EMAIL:
-              <a href="mailto:youremail@example.com">shihuaok@gmail.com</a>
+              <a href="mailto:shihuaok@gmail.com">shihuaok@gmail.com</a>
             </p>
             <p>EDUCATION: Goldsmiths, University of London</p>
             <p>LOCATION: London, UK</p>
@@ -65,18 +69,23 @@
         <div class="project-card">
           <img src="assets/project1.jpg" alt="Project 1" />
           <div class="project-info">
-            <h3>Visualdev UI</h3>
+            <h3>VisualDev UI</h3>
             <p>
-              VisualDev UI aims to create an innovative and user-friendly UI
-              library platform that revolutionizes the web development
-              experience by making it more visual and intuitive. Unlike
-              traditional UI libraries, our software focuses on providing a
-              visual development experience similar to building with Lego
-              blocks, where users can individually select, copy, and assemble UI
-              components to create fully functional web pages.
+              VisualDev UI is an innovative and user-friendly UI library
+              platform that revolutionizes web development by offering a more
+              visual and intuitive experience. Users can select, copy, and
+              assemble UI components like Lego blocks to create fully functional
+              web pages.
             </p>
-            <p>Keywords: React.js, Tailwind CSS, UI Design, Node.js</p>
-            <a href="project-link-1">GitHub: Project 1</a>
+            <div class="keywords">
+              <span>React.js</span>
+              <span>Tailwind CSS</span>
+              <span>UI Design</span>
+              <span>Node.js</span>
+            </div>
+            <a href="project-link-1" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
@@ -90,12 +99,16 @@
               offering customizable playback with a dual-player system for
               independent or synced control. It includes essential features like
               volume control, playback speed adjustment, and track position
-              selection. I also implemented a waveform display for visual
-              monitoring of audio progress, along with custom buttons and design
-              elements to enhance the user experience.
+              selection.
             </p>
-            <p>Keywords: C++, JUCE, Object-Oriented Programming, GUI</p>
-            <a href="project-link-2">GitHub: Project 2</a>
+            <div class="keywords">
+              <span>C++</span>
+              <span>JUCE</span>
+              <span>GUI</span>
+            </div>
+            <a href="project-link-1" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
@@ -109,14 +122,16 @@
               primarily implementing the generation and plotting of candlestick
               charts using historical price data. The candlestick charts display
               key information such as the market's open, close, high, and low
-              prices, helping users visually analyze the price fluctuations and
-              market trends of cryptocurrencies.
+              prices.
             </p>
-            <p>
-              Keywords: C++, Object-Oriented Programming, Data Visualization,
-              Financial Applications
-            </p>
-            <a href="project-link-3">GitHub: Project 3</a>
+            <div class="keywords">
+              <span>C++</span>
+              <span>Data Visualization</span>
+              <span>Financial Applications</span>
+            </div>
+            <a href="project-link-1" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
@@ -126,16 +141,18 @@
           <div class="project-info">
             <h3>CueMaster</h3>
             <p>
-              CueMaster is a billiards simulation game I developed using the
-              Matter.js physics engine, aimed at providing users with a
-              realistic billiards experience. Through keyboard and mouse
-              controls, users can simulate striking the ball and experience
-              realistic movement and collisions on the table. The game offers
-              multiple modes, including a standard billiards mode and challenge
-              mode.
+              CueMaster is a billiards simulation game using the Matter.js
+              physics engine, offering realistic billiards experience with
+              keyboard and mouse controls.
             </p>
-            <p>Keywords: JavaScript, Matter.js, p5.js, Game Physics</p>
-            <a href="project-link-4">GitHub: Project 4</a>
+            <div class="keywords">
+              <span>JavaScript</span>
+              <span>Matter.js</span>
+              <span>Game Physics</span>
+            </div>
+            <a href="project-link-1" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
@@ -145,16 +162,18 @@
           <div class="project-info">
             <h3>BlogTalk</h3>
             <p>
-              BlogTalk provides a convenient and intuitive online space for
-              content creators and readers. The platform is developed using the
-              Node.js and Express framework, and it integrates SQLite for
-              managing articles, comments, and user information. The front end
-              uses the EJS templating engine to render dynamic content, ensuring
-              that the interface remains simple and user-friendly throughout the
-              experience.
+              BlogTalk is a platform for content creators and readers, built
+              using Node.js and Express with SQLite for managing articles,
+              comments, and user information.
             </p>
-            <p>Keywords: Node.js, Express, SQLite, EJS, RESTful API</p>
-            <a href="project-link-1">GitHub: Project 1</a>
+            <div class="keywords">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>SQLite</span>
+            </div>
+            <a href="project-link-1" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
 
@@ -162,26 +181,22 @@
         <div class="project-card">
           <img src="assets/project6.png" alt="Project 6" />
           <div class="project-info">
-            <h3>TED Persuasive Adjective Explore</h3>
+            <h3>TED Persuasive Adjective Explorer</h3>
             <p>
-              This is an analysis project based on TED talk transcripts, aimed
-              at studying the most persuasive adjectives and their sentiment
-              tendencies in TED talks. Using natural language processing
-              techniques, I extracted adjectives from the most popular TED talks
-              of the past decade in fields such as Technology, Science, and
-              Business, and generated word clouds. Additionally, I conducted
-              sentiment analysis on these talks to explore the persuasive
-              adjectives used in different fields and the speech styles they
-              reflect.
+              This project analyzes TED talk transcripts to study persuasive
+              adjectives and their sentiment tendencies using NLP techniques,
+              generating word clouds and conducting sentiment analysis.
             </p>
-            <p>
-              Keywords: Web Scraping, Natural Language Processing, Tokenization,
-              Sentiment Analysis, Word Cloud
-            </p>
-            <a href="project-link-2">GitHub: Project 2</a>
+            <div class="keywords">
+              <span>Web Scraping</span>
+              <span>NLP</span>
+              <span>Sentiment Analysis</span>
+            </div>
+            <a href="project-link-1" class="github-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
-        <!-- end of project -->
       </div>
     </section>
 
