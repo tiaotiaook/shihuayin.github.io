@@ -65,7 +65,34 @@
         <button onclick="filterProjects('web')">Dynamic Web Projects</button>
       </div>
       <div class="project-grid">
-        <!-- Project 1: Dynamic Web Project -->
+        <!-- Project 0: Bill Splitter -->
+        <div class="project-card web">
+          <img src="assets/bill_split.jpg" alt="Bill Splitter" />
+          <div class="project-info">
+            <h3>Bill Splitter</h3>
+            <p>
+              Bill Splitter is a React-based friend management and bill
+              splitting application. It leverages React's state management and
+              component-based design to achieve user interaction and dynamic
+              page updates. The main features include a friend list display, an
+              add friend form, and a bill splitting form.
+            </p>
+            <div class="keywords">
+              <span>React</span>
+              <span>State Management</span>
+              <span>JavaScript</span>
+              <span>Event Handling</span>
+            </div>
+            <a
+              href="https://split-bill-project.vercel.app/"
+              class="github-link"
+            >
+              View Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 1: Travel Mate -->
         <div class="project-card web">
           <img src="assets/project0.png" alt="Project 0" />
           <div class="project-info">
@@ -93,7 +120,7 @@
           </div>
         </div>
 
-        <!-- Project 1: Dynamic Web Project -->
+        <!-- Project 2: VisualDev UI -->
         <div class="project-card web">
           <img src="assets/project1.jpg" alt="Project 1" />
           <div class="project-info">
@@ -117,7 +144,7 @@
           </div>
         </div>
 
-        <!-- Project 2: Software Project -->
+        <!-- Project 3: DJ-Decks -->
         <div class="project-card software">
           <img src="assets/project2.avif" alt="Project 2" />
           <div class="project-info">
@@ -140,7 +167,7 @@
           </div>
         </div>
 
-        <!-- Project 3: Software Project -->
+        <!-- Project 4: MerkelMain -->
         <div class="project-card software">
           <img src="assets/project3.webp" alt="Project 3" />
           <div class="project-info">
@@ -166,7 +193,7 @@
           </div>
         </div>
 
-        <!-- Project 4: Software Project -->
+        <!-- Project 5: CueMaster -->
         <div class="project-card software">
           <img src="assets/project4.webp" alt="Project 4" />
           <div class="project-info">
@@ -190,7 +217,7 @@
           </div>
         </div>
 
-        <!-- Project 5: Dynamic Web Project -->
+        <!-- Project 6: BlogTalk -->
         <div class="project-card web">
           <img src="assets/project5.webp" alt="Project 5" />
           <div class="project-info">
@@ -211,7 +238,7 @@
           </div>
         </div>
 
-        <!-- Project 6: Dynamic Web Project -->
+        <!-- Project 7: TED Persuasive Adjective Explorer -->
         <div class="project-card web">
           <img src="assets/project6.png" alt="Project 6" />
           <div class="project-info">
@@ -235,7 +262,7 @@
           </div>
         </div>
 
-        <!-- Project 7: Dynamic Web Project -->
+        <!-- Project 8: Mystery Solver -->
         <div class="project-card web">
           <img src="assets/project7.jpeg" alt="Project 7" />
           <div class="project-info">
@@ -261,7 +288,7 @@
           </div>
         </div>
 
-        <!-- Project 8: Dynamic Web Project -->
+        <!-- Project 9: Postfix Expression Interpreter -->
         <div class="project-card software">
           <img src="assets/project8.jpg" alt="Project 8" />
           <div class="project-info">
@@ -296,17 +323,17 @@
       function filterProjects(type) {
         const allProjects = document.querySelectorAll(".project-card");
         allProjects.forEach((project) => {
-          project.style.display = "none"; // 隐藏所有项目
+          project.style.display = "none"; // Hide all projects
         });
 
         if (type === "all") {
           allProjects.forEach((project) => {
-            project.style.display = "flex"; // 显示所有项目
+            project.style.display = "flex"; // Show all projects
           });
         } else {
           const filteredProjects = document.querySelectorAll(`.${type}`);
           filteredProjects.forEach((project) => {
-            project.style.display = "flex"; // 显示符合类型的项目
+            project.style.display = "flex"; // Show filtered projects
           });
         }
       }
