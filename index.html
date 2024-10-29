@@ -65,7 +65,90 @@
         <button onclick="filterProjects('web')">Dynamic Web Projects</button>
       </div>
       <div class="project-grid">
-        <!-- Project 0: Bill Splitter -->
+        <!-- Project 1: VisualDev UI -->
+        <div class="project-card web">
+          <img src="assets/project1.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>VisualDev UI</h3>
+            <p>
+              VisualDev UI is an innovative and user-friendly UI library
+              platform that revolutionizes web development by offering a more
+              visual and intuitive experience. Unlike traditional UI libraries,
+              VisualDev UI focuses on providing a visual development experience
+              similar to building with Lego blocks, where users can individually
+              select, copy, and assemble UI components to create fully
+              functional web pages.
+            </p>
+            <div class="keywords">
+              <span>React.js</span>
+              <span>Tailwind CSS</span>
+              <span>UI Design</span>
+              <span>Node.js</span>
+            </div>
+            <a href="https://visualdev-ui.vercel.app/" class="github-link">
+              <i class=" "></i> View Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Travel Mate -->
+        <div class="project-card web">
+          <img src="assets/project0.png" alt="Project 0" />
+          <div class="project-info">
+            <h3>Travel Mate</h3>
+            <p>
+              Travel Mate is an assistant app designed specifically for
+              travelers, offering features like packing checklist management,
+              expense tracking, and photo uploading to help users easily plan
+              and manage travel needs. The app integrates with Firebase cloud
+              services to securely store users' expense data and travel photos
+              in the cloud.
+            </p>
+            <div class="keywords">
+              <span>React Native</span>
+              <span>Firebase</span>
+              <span>Expo</span>
+              <span>State Management</span>
+            </div>
+            <a
+              href="https://github.com/shihuayin/my-first-react-native-app"
+              class="github-link"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: MovieBuddy -->
+        <div class="project-card web">
+          <img src="assets/imdb.png" alt="MovieBuddy" />
+          <div class="project-info">
+            <h3>MovieBuddy</h3>
+            <p>
+              MovieBuddy is a React-based movie search and management
+              application that allows users to search for movies, view movie
+              details, rate movies, and add them to a watched list.
+            </p>
+            <p>
+              The project includes several custom hooks, such as useMovies for
+              fetching movie data, useLocalStorageState for persisting data, and
+              useKey for implementing keyboard shortcuts.
+            </p>
+            <div class="keywords">
+              <span>React</span>
+              <span>State Management</span>
+              <span>Custom Hooks</span>
+            </div>
+            <a
+              href="https://usepopcorn-two-drab.vercel.app/"
+              class="github-link"
+            >
+              View Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Bill Splitter -->
         <div class="project-card web">
           <img src="assets/bill_split.jpg" alt="Bill Splitter" />
           <div class="project-info">
@@ -92,27 +175,29 @@
           </div>
         </div>
 
-        <!-- Project 1: Travel Mate -->
-        <div class="project-card web">
-          <img src="assets/project0.png" alt="Project 0" />
+        <!-- Project 5: Handwritten Digit Recognition -->
+        <div class="project-card software">
+          <img src="assets/mnist.png" alt="Handwritten Digit Recognition" />
           <div class="project-info">
-            <h3>Travel Mate</h3>
+            <h3>Handwritten Digit Recognition</h3>
             <p>
-              "Travel Mate" is an assistant app designed specifically for
-              travelers, offering features like packing checklist management,
-              expense tracking, and photo uploading to help users easily plan
-              and manage travel needs. The app integrates with Firebase cloud
-              services to securely store users' expense data and travel photos
-              in the cloud.
+              Handwritten Digit Recognition is an application that uses deep
+              learning models to achieve real-time recognition of handwritten
+              digits. The system uses a pre-trained neural network model to
+              recognize users' handwritten digits and adjusts the model
+              parameters based on user feedback. This project use TensorFlow and
+              Keras frameworks to train on the MNIST dataset and implemented an
+              intuitive user interface with Tkinter.
             </p>
             <div class="keywords">
-              <span>React Native</span>
-              <span>Firebase</span>
-              <span>Expo</span>
-              <span>State Management</span>
+              <span>Deep Learning</span>
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>Python</span>
+              <span>Tkinter</span>
             </div>
             <a
-              href="https://github.com/shihuayin/my-first-react-native-app"
+              href="https://github.com/shihuayin/Handwritten-Digit-Recognition"
               class="github-link"
             >
               <i class="fab fa-github"></i> View on GitHub
@@ -120,31 +205,7 @@
           </div>
         </div>
 
-        <!-- Project 2: VisualDev UI -->
-        <div class="project-card web">
-          <img src="assets/project1.jpg" alt="Project 1" />
-          <div class="project-info">
-            <h3>VisualDev UI</h3>
-            <p>
-              VisualDev UI is an innovative and user-friendly UI library
-              platform that revolutionizes web development by offering a more
-              visual and intuitive experience. Users can select, copy, and
-              assemble UI components like Lego blocks to create fully functional
-              web pages.
-            </p>
-            <div class="keywords">
-              <span>React.js</span>
-              <span>Tailwind CSS</span>
-              <span>UI Design</span>
-              <span>Node.js</span>
-            </div>
-            <a href="https://visualdev-ui.vercel.app/" class="github-link">
-              <i class=" "></i> View Live Demo
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 3: DJ-Decks -->
+        <!-- Project 6: DJ-Decks -->
         <div class="project-card software">
           <img src="assets/project2.avif" alt="Project 2" />
           <div class="project-info">
@@ -167,65 +228,17 @@
           </div>
         </div>
 
-        <!-- Project 4: MerkelMain -->
-        <div class="project-card software">
-          <img src="assets/project3.webp" alt="Project 3" />
-          <div class="project-info">
-            <h3>MerkelMain</h3>
-            <p>
-              MerkelMain exchange focuses on cryptocurrency data visualization,
-              primarily implementing the generation and plotting of candlestick
-              charts using historical price data. The candlestick charts display
-              key information such as the market's open, close, high, and low
-              prices.
-            </p>
-            <div class="keywords">
-              <span>C++</span>
-              <span>Data Visualization</span>
-              <span>Financial Applications</span>
-            </div>
-            <a
-              href="https://github.com/shihuayin/MerkelMain"
-              class="github-link"
-            >
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 5: CueMaster -->
-        <div class="project-card software">
-          <img src="assets/project4.webp" alt="Project 4" />
-          <div class="project-info">
-            <h3>CueMaster</h3>
-            <p>
-              CueMaster is a billiards simulation game using the Matter.js
-              physics engine, offering realistic billiards experience with
-              keyboard and mouse controls.
-            </p>
-            <div class="keywords">
-              <span>JavaScript</span>
-              <span>Matter.js</span>
-              <span>Game Physics</span>
-            </div>
-            <a
-              href="https://github.com/shihuayin/CueMaster"
-              class="github-link"
-            >
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 6: BlogTalk -->
+        <!-- Project 7: BlogTalk -->
         <div class="project-card web">
           <img src="assets/project5.webp" alt="Project 5" />
           <div class="project-info">
             <h3>BlogTalk</h3>
             <p>
-              BlogTalk is a platform for content creators and readers, built
-              using Node.js and Express with SQLite for managing articles,
-              comments, and user information.
+              BlogTalk is a platform designed for content creators and readers,
+              built using Node.js and Express, and utilizing SQLite to manage
+              articles, comments, and user information. Creators can create,
+              update, delete, and publish articles, while readers can interact
+              by liking and commenting on published articles.
             </p>
             <div class="keywords">
               <span>Node.js</span>
@@ -238,15 +251,19 @@
           </div>
         </div>
 
-        <!-- Project 7: TED Persuasive Adjective Explorer -->
+        <!-- Project 8: TED Persuasive Adjective Explorer -->
         <div class="project-card web">
           <img src="assets/project6.png" alt="Project 6" />
           <div class="project-info">
             <h3>TED Persuasive Adjective Explorer</h3>
             <p>
-              This project analyzes TED talk transcripts to study persuasive
-              adjectives and their sentiment tendencies using NLP techniques,
-              generating word clouds and conducting sentiment analysis.
+              The TED Persuasive Adjective Explorer project analyzes TED talk
+              transcripts from the past decade using tools like SpaCy, NLTK, and
+              VADER to explore common persuasive adjectives in different fields
+              (such as Technology, Science, and Business) and the phenomena they
+              reflect. The project also includes word cloud visualization and
+              sentiment analysi, ultimately helping to better understand
+              effective communication techniques in public speaking.
             </p>
             <div class="keywords">
               <span>Web Scraping</span>
@@ -262,7 +279,7 @@
           </div>
         </div>
 
-        <!-- Project 8: Mystery Solver -->
+        <!-- Project 9: Mystery Solver -->
         <div class="project-card web">
           <img src="assets/project7.jpeg" alt="Project 7" />
           <div class="project-info">
@@ -281,31 +298,6 @@
             </div>
             <a
               href="https://github.com/shihuayin/Mystery-Solver"
-              class="github-link"
-            >
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 9: Postfix Expression Interpreter -->
-        <div class="project-card software">
-          <img src="assets/project8.jpg" alt="Project 8" />
-          <div class="project-info">
-            <h3>Postfix Expression Interpreter</h3>
-            <p>
-              The Postfix Expression Interpreter processes and evaluates
-              user-inputted postfix expressions. It supports operators such as
-              addition, subtraction, multiplication, division, exponentiation,
-              modulus, logarithms, and roots.
-            </p>
-            <div class="keywords">
-              <span>Stack Operations and Management</span>
-              <span>JavaScript</span>
-              <span>Dynamic Expression</span>
-            </div>
-            <a
-              href="https://github.com/shihuayin/Postfix-Expression-Interpreter"
               class="github-link"
             >
               <i class="fab fa-github"></i> View on GitHub
